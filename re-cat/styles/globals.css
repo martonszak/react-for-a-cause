@@ -1,9 +1,29 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+/* COLORS
+
+orange: #EB5E28
+red: crimson;
+dark grey: #252422
+medium grey: #CCC5B9
+light grey: #403D39
+almost white: #CCC5B9
+
+*/
+
+/* BASIC CSS */
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #403D39;
+    color: antiquewhite;
 }
 
 a {
@@ -13,14 +33,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }
