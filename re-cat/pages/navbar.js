@@ -5,6 +5,7 @@ export default function Navbar() {
     { text: "Home", href: "/" },
     { text: "About Us", href: "/about" },
     { text: "Contact", href: "/contact" },
+    { text: "Adopt", href: "/adopt" },
   ];
 
   return (
