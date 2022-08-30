@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   const menu = [
     { text: "Home", href: "/" },
@@ -5,17 +7,17 @@ export default function Navbar() {
     { text: "Contact", href: "/contact" },
   ];
 
-  const Header =(
-    <header>
-      <nav id="menu">
-        <ul>
-          {menu.map((e) => (
-            <a href={e.href}>{e.text}</a>
-          ))}
-        </ul>
-      </nav>
-    </header>
+  return (
+    <div className="navbar-container">
+      <ul className="navbar-list">
+        {menu.map((e, i) => (
+          <li className="navbar-list-item" key={i}>
+            <Link className="navbar-link" href={e.href}>
+              <a className="navbar-a">{e.text}</a>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
-  return Header;
-
 }
