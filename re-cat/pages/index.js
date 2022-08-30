@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import About from "./about";
 import Contact from "./contact";
+import badReasons from "./badReasons";
 
 export default function Home() {
   return (
