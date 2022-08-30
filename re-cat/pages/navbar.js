@@ -2,10 +2,11 @@ import Link from "next/link";
 
 export default function Navbar() {
   const menu = [
-    { text: "Home", href: "/" },
-    { text: "About Us", href: "/about" },
-    { text: "Contact", href: "/contact" },
-    { text: "Adopt", href: "/adopt" },
+    { text: "Főoldal", href: "/" },
+    { text: "Rólunk", href: "/about" },
+    { text: "Kapcsolat", href: "/contact" },
+    { text: "Örökbefogadás", href: "/adopt" },
+    { text: "Tippek", href: "/badreasons" },
   ];
 
   return (

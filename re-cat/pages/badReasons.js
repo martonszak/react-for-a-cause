@@ -1,6 +1,6 @@
 export default function badReasons() {
   return (
-    <div>
+    <div className="reasons-container">
       <div className="bad-reasons-title">
         <h1>
           A 10 legrosszabb kifogás a macskák (és kutyák) ivartalanítása ellen

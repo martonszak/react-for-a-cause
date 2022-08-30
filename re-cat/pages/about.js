@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div>
+    <div className="reasons-container">
       <h1>Rólunk</h1>
       <h3>Kedves Látogatónk!</h3>
       <p>

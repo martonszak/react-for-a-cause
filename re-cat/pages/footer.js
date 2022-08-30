@@ -5,9 +5,9 @@ export default function Footer() {
     <div className="footer-container">
       <ul className="footer-list">
         <li className="footer-list-item">
-          <p>
-            Támogasd az ivartalanító, túlszaporodás elleni kampányunkat!
-            Adószámunk: 18011476-1-13
+          <p>Támogasd az ivartalanító, túlszaporodás elleni kampányunkat!</p>
+          <p className="adoszam">
+            <strong>Adószámunk: 18011476-1-13</strong>
           </p>
         </li>
       </ul>

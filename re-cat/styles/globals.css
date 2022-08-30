@@ -1,5 +1,5 @@
 /* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
@@ -18,33 +18,47 @@ almost white: #CCC5B9
 
 /* NAVBAR */
 
-.navbar-container {
+.navbar-list {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 2rem;
   width: 100%;
   height: 4rem;
   background-color: #eb5e28;
   display: flex;
-  align-items: center;
-}
-.navbar-list {
   width: 100%;
-  display: flex;
   padding: 0;
+  align-items: center;
+  position: relative;
+  top: 0;
+  margin: 0;
 }
 .navbar-list-item {
+  justify-content: center;
+  height: 100%;
   text-align: center;
-  width: 7rem;
+  width: 9rem;
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.navbar-list-item:hover {
+  background-color: green;
 }
 
 /* FOOTER */
 
 .footer-container {
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+  font-size: 2rem;
   width: 100%;
   height: 4rem;
   background-color: #eb5e28;
   display: flex;
   align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 .footer-list {
@@ -55,8 +69,25 @@ almost white: #CCC5B9
   align-items: center;
 }
 .footer-list-item {
+  display: flex;
   text-align: center;
   list-style-type: none;
+}
+
+.adoszam {
+  padding-left: 2rem;
+}
+
+/* BAD REASONS */
+
+.reasons-container {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-bottom: 5rem;
+  text-align: justify;
+  margin: auto;
 }
 
 html,
