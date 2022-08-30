@@ -1,20 +1,16 @@
 import Link from "next/link";
-export default function Footer(){
-    const menu = [
-        { text: "Támogass minket", href: "/supportus" },
-        { text: "Kontakt", href: "/contact" },
-      ];
-        return (
-            <div className="footer-container">
-              <ul className="footer-list">
-                {menu.map((e, i) => (
-                  <li className="footer-list-item" key={i}>
-                    <Link className="footer-link" href={e.href}>
-                      <a className="footer-a">{e.text}</a>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          );
-        }
+export default function Footer() {
+  const menu = [{ text: "Kapcsolat", href: "/contact" }];
+  return (
+    <div className="footer-container">
+      <ul className="footer-list">
+        <li className="footer-list-item">
+          <p>
+            Támogasd az ivartalanító, túlszaporodás elleni kampányunkat!
+            Adószámunk: 18011476-1-13
+          </p>
+        </li>
+      </ul>
+    </div>
+  );
+}
