@@ -1,4 +1,4 @@
-export default function Menu() {
+export default function Navbar() {
   const menu = [
     { text: "Home", href: "/" },
     { text: "About Us", href: "/about" },
