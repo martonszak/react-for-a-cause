@@ -22,6 +22,9 @@ almost white: #CCC5B9
 
 /* NAVBAR */
 
+.navbar-button {
+  display: none;
+}
 .navbar-list {
   font-family: "Amatic SC", cursive;
   font-weight: 700;
@@ -130,4 +133,57 @@ object-fit: cover;
 .adopt-img{
   width: 100%;
 
+}
+
+/* MOBILE */
+
+@media screen and (max-width:425px){
+  .navbar-container{
+    display: none;
+  }
+  .navbar-button{
+    display:block;
+  }
+  .footer-list {
+    align-items:flex-start;
+    justify-content: flex-start;
+    width: fit-content;
+  }
+  .footer-container {
+
+  }
+
+}
+.goodmethod-list{
+font-size: large;
+
+}
+.link{
+  color: #EB5E28;
+  list-style: none;
+  font-size: larger;
+  margin-bottom: 18px;
+}
+.pdfclass{
+
+  color: #EB5E28;
+}
+.linkcontainer{
+display: flex;
+justify-content: space-around;
+
+}
+
+.smileycat{
+  padding-top: 75px;
+  padding-bottom: 75px;
+  display: flex;
+  justify-content: center;
+float: center;
+justify-content: space-between;
+
+}
+.img1{
+
+border-radius: 100%;
 }
