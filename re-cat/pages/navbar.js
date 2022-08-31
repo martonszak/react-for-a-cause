@@ -22,7 +22,7 @@ export default function Navbar() {
       setCount(count - 1);
     }
   }
-if (count === 0 ){
+if (count === 0){
   return (
     <div>
     <div className="navbar-mobile">
@@ -42,7 +42,7 @@ if (count === 0 ){
     </div>
   );
 }
-if ( count === 1) {
+if (count === 1) {
   return (
     <div>
     <div className="navbar-mobile">
