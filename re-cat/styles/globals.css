@@ -130,4 +130,38 @@ a {
   .footer-container {
 
   }
+
+}
+.goodmethod-list{
+font-size: large;
+
+}
+.link{
+  color: #EB5E28;
+  list-style: none;
+  font-size: larger;
+  margin-bottom: 18px;
+}
+.pdfclass{
+
+  color: #EB5E28;
+}
+.linkcontainer{
+display: flex;
+justify-content: space-around;
+
+}
+
+.smileycat{
+  padding-top: 75px;
+  padding-bottom: 75px;
+  display: flex;
+  justify-content: center;
+float: center;
+justify-content: space-between;
+
+}
+.img1{
+
+border-radius: 100%;
 }
