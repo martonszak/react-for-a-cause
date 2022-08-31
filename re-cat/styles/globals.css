@@ -3,6 +3,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
+/* IMAGE GALLERY */
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 /* COLORS
 
 orange: #EB5E28
@@ -107,4 +111,23 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* ADOPT PAGE */
+
+.adopt-container{
+  width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.adopt-cat-card{
+object-position: center;
+object-fit: cover;
+}
+
+.adopt-img{
+  width: 100%;
+
 }
