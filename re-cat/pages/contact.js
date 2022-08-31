@@ -45,34 +45,39 @@ export default function Contact() {
   };
 
   const contactForm = (
-    <div id="contact-form">
+    <div className="contact-form">
+      <div className="contact-title">
+        Vegye fel velünk a kapcsolatot az alábbi űrlap kitöltésével!
+      </div>
       <form onSubmit={handleSubmit}>
+      <div className="cut"></div>
         <div className="input-row">
-          <label htmlFor="first">First Name</label>
-          <input type="text" id="first" name="first" required />
+          <label htmlFor="first" className="placeholder">Keresztnév</label>
+          <input type="text" id="first" name="first" className="input" placeholder=" " required />
         </div>
-
+      <div className="cut"></div>
         <div className="input-row">
-          <label htmlFor="last">Last Name</label>
-          <input type="text" id="last" name="last" required />
+          <label htmlFor="last" className="placeholder">Családnév</label>
+          <input type="text" id="last" name="last" className="input" placeholder=" " required />
         </div>
-
+      <div className="cut"></div>
         <div className="input-row">
-          <label htmlFor="email">E-mail</label>
-          <input type="email" id="email" name="email" required />
+          <label htmlFor="email" className="placeholder">E-mail</label>
+          <input type="email" id="email" name="email" className="input" placeholder=" " required />
         </div>
-
+      <div className="cut"></div>
         <div className="input-row">
-          <label htmlFor="subject">Subject</label>
-          <input type="text" id="subject" name="subject" required />
+          <label htmlFor="subject" className="placeholder">Tárgy</label>
+          <input type="text" id="subject" name="subject" className="input" placeholder=" " required />
         </div>
-
+      <div className="cut"></div>
         <div className="input-row">
-          <label htmlFor="message">Message</label>
-          <textarea id="message" name="message" required />
+          <label htmlFor="message" className="placeholder">Üzenet</label>
+          <textarea id="message" name="message" className="input" placeholder=" " required />
         </div>
-
-        <button type="submit">Submit</button>
+        <div className="input-row">
+          <button type="submit" className="submit">Küldés</button>
+        </div>
       </form>
     </div>
   );

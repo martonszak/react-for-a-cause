@@ -1,9 +1,15 @@
-
-import '../styles/globals.css';
-import Layout from './components/layout';
+import "../styles/globals.css";
+import Layout from "./components/layout";
+import "../styles/transition.css";
+import Transition from "./Transition";
 
 function MyApp({ Component, pageProps }) {
-  return (<Layout><Component {...pageProps} /></Layout>)
-
+  return (
+    <Layout>
+      <Transition>
+        <Component {...pageProps} />
+      </Transition>
+    </Layout>
+  );
 }
-export default MyApp
+export default MyApp;
