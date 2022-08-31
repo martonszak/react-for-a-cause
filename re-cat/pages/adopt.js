@@ -1,59 +1,74 @@
-import Image from 'next/image'
-
 export default function adoptCat() {
-    const cats = [
-        {
-            img: "https://stories.freecdr.com/wp-content/uploads/2022/07/shorthair-cats-breed.jpg", 
-            name: "Lusti",
-            type: "Shorthair Cats",
-            age: "10 years",
-            sex: "female",
-            description: "Lovely, sleepy cat"
-        },
-        {
-            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOm1gCfDV4tLgNCntvI_UQdWJfhG3F5GSU6g&usqp=CAU",
-            name: "Grumpy",
-            type: "Siamis",
-            age: "2 years",
-            sex: "female",
-            description: "Loves to play, hate strangers"
-        },
-        {
-            img:"https://imageio.forbes.com/specials-images/imageserve/62619e3d45164baec55d8631/0x0.jpg?format=jpg&width=1200",
-            name: "Blacky",
-            type: "",
-            age: "3 years",
-            sex: "female",
-            description: "Lovely, sleepy cat"
-        },
-        {
-            img: "https://images.ctfassets.net/440y9b545yd9/6grJk9ZQXPqgQ3JoJWDZBI/b9f9f47826469726faa1dff26fe9781b/Scottish_Fold_brindle.jpg",
-            name: "Bubu",
-            type: "Scottish Fold Cats",
-            age: '4 months',
-            sex: "female",
-            description: "Lovely, sleepy cat"
-        },
-        {
-            img: "https://cdn.wamiz.fr/cdn-cgi/image/format=auto,quality=80,width=1200,height=675,fit=cover/article/main-picture/5e8b329878de4003882855.jpg",
-            name: "Tiger",
-            type: "Maine Coon Cats",
-            age: '1 years',
-            sex: 'female',
-            description: "Lovely, sleepy cat"
-        },
-    ];
+  const cats = [
+    {
+      img: "/4.jpg",
+      name: "Lusti",
+      type: "rövidszőrű",
+      age: "10 éves",
+      sex: "nőstény",
+      description:
+        "A nevem Lusti. Nagyon szeretek az ablakból nézelődni, meleg helyeken szunyókálni. Más háziállatokkal nem jövök jól ki, mert nem szeretem ha zaklatnak.",
+    },
+    {
+      img: "/5.jpg",
+      name: "Grumpy",
+      type: "sziámi",
+      age: "2 éves",
+      sex: "kandúr",
+      description:
+        "A nevem Grumpy. Nem szeretem az embereket, se bármilyen más élőlényt, kivéve a gazdámat, aki a legfontosabb a világon. ",
+    },
+    {
+      img: "/6.jpg",
+      name: "Blacky",
+      type: "rövidszőrű",
+      age: "3 éves",
+      sex: "nöstény",
+      description:
+        "Fekete macska vagyok, de a mondással ellentétben én szerencsét hozok.",
+    },
+    {
+      img: "/7.jpg",
+      name: "Bubu",
+      type: "skót lógófülű",
+      age: "4 hónapos",
+      sex: "nőstény",
+      description: "",
+    },
+    {
+      img: "/8.jpg",
+      name: "Tigris",
+      type: "main coon",
+      age: "1 éves",
+      sex: "nőstény",
+      description:
+        "Félig kinti, félig benti, félig tigrisként éltem eddig, de még kicsi vagyok, benti cica is lehetek. Sok madarat és sok egeret vittem már haza, mert a gazdám nem tudott vadászni. ",
+    },
+  ];
 
-    return (
-        <div className="adopt-cont">
-            {cats.map((e, i) => (
-                <div className="adoptable-cat-card" key={i}>
-                    <img src={e.img} width="100px" height="100px"/><br/>
-                    <label><strong>Name: </strong>{e.name}</label><br/>
-                    <label><strong>Age: </strong>{e.age}</label><br/>
-                    <label><strong>Sex: </strong>{e.sex}</label><br/>
-                </div>
-            ))}
+  return (
+    <div className="adopt-container">
+      {cats.map((e, i) => (
+        <div className="adopt-cat-card" key={i}>
+          <img className="adopt-img" src={e.img} />
+          <br />
+          <label>
+            <strong>Név: </strong>
+            {e.name}
+          </label>
+          <br />
+          <label>
+            <strong>Kor: </strong>
+            {e.age}
+          </label>
+          <br />
+          <label>
+            <strong>Neme: </strong>
+            {e.sex}
+          </label>
+          <br />
         </div>
-    );
+      ))}
+    </div>
+  );
 }

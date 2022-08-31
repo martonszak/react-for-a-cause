@@ -9,6 +9,7 @@ export default function Navbar() {
     { text: "Kapcsolat", href: "/contact" },
     { text: "Örökbefogadás", href: "/adopt" },
     { text: "Tippek", href: "/badreasons" },
+    {text: "A jó módszer", href: "/goodmethod" },
   ];
 
   const [count, setCount] = useState(0);
