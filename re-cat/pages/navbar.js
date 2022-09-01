@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar(props) {
   const menu = [
     { text: "Főoldal", href: "/" },
     { text: "Rólunk", href: "/about" },
@@ -16,15 +16,17 @@ export default function Navbar() {
   function handleClick() {
     if (count === 0) {
       setCount(1);
+      props.onChange(true);
     }
     if (count === 1) {
       setCount(0);
+      props.onChange(false)
     }
   }
 
   if (count === 0) {
     return (
-      <div>
+      <div className="navbar-container">
         <div className="hamburger-icon" id="icon" onClick={handleClick}>
           <div className="icon-1" id="a"></div>
           <div className="icon-2" id="b"></div>
@@ -49,7 +51,7 @@ export default function Navbar() {
 
   if (count === 1) {
     return (
-      <div>
+      <div className="navbar-container">
         <div className="hamburger-icon" id="icon" onClick={handleClick}>
           <div className="icon-1 a" id="a"></div>
           <div className="icon-2 c" id="b"></div>

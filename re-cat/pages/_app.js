@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import Layout from "./components/layout";
 import "../styles/transition.css";
 import Transition from "./Transition";
-import "../styles/hamburger.css";
+import "../styles/mobile.css";
 
 
 function MyApp({ Component, pageProps }) {
