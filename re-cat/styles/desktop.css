@@ -318,8 +318,6 @@ almost white: #FFFCF2
 }
 
 .adopt-cat-card {
-  object-position: center;
-  object-fit: cover;
   display: flex;
   flex-direction: column;
   width: 40vw;
@@ -328,7 +326,7 @@ almost white: #FFFCF2
 }
 
 .adopt-img {
-  height: 100%;
+  height: 50%;
 }
 
 .adopt-text {
