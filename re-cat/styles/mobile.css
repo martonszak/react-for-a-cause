@@ -3,13 +3,13 @@
 orange: #EB5E28
 red: crimson;
 dark grey: #252422
-medium grey: #CCC5B9
-light grey: #403D39
-almost white: #CCC5B9
+medium grey: #403D39
+light grey: #CCC5B9
+almost white: #FFFCF2
 
 */
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 428px) {
   @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 
   @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -233,6 +233,8 @@ almost white: #CCC5B9
     left: -30rem !important;
   }
 
+  /* ABOUT PAGE */
+
   .about-container {
     margin: auto;
     padding: 0%;
@@ -244,21 +246,119 @@ almost white: #CCC5B9
     font-family: "Amatic SC", cursive;
     font-weight: 700;
     font-size: 2.2rem;
-    color: #CCC5B9;
+    color: #ccc5b9;
     margin: 1rem 0rem;
   }
   .about-header {
     font-family: "Amatic SC", cursive;
     font-weight: 700;
     font-size: 1.5rem;
-    color: #CCC5B9;
+    color: #ccc5b9;
     margin: 1rem 0rem;
   }
 
   .about-text {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-size: 1rem;
-    color: #CCC5B9;
+    color: #ccc5b9;
     margin: 1rem 0rem 6rem 0rem;
+  }
+
+  /* CONTACT PAGE */
+
+  .contact-form {
+    margin: auto;
+    padding: 0%;
+    width: 100vw;
+    padding-top: 10vh;
+    display: block;
+  }
+
+  .contact-title {
+    padding: 0%;
+    font-family: "Amatic SC", cursive;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #ccc5b9;
+    margin: 1rem 0rem 2rem 0rem;
+  }
+
+  form {
+    background-color: #252422;
+    box-sizing: border-box;
+    height: 65vh;
+    padding-top: 2vh;
+    width: 80vw;
+    margin: auto;
+  }
+  .cut {
+    display: none;
+  }
+
+  .input-row {
+    width: 100%;
+    margin: 0%;
+  }
+
+  .input {
+    margin: 5% 10% 5% 10%;
+    font-family: "Amatic SC", cursive;
+    font-weight: 700;
+    color: #252422;
+    width: 80%;
+    border-radius: 0%;
+    background-color: #ccc5b9;
+    padding: 0%;
+    padding-left: 2%;
+    height: 1.6rem;
+  }
+
+  .textarea {
+    margin: 5% 10% 5% 10%;
+    font-family: "Amatic SC", cursive;
+    font-weight: 700;
+    color: #252422;
+    width: 80%;
+    border-radius: 0%;
+    background-color: #ccc5b9;
+    padding: 0%;
+    padding-left: 2%;
+    height: 1.6rem;
+  }
+
+  #button-container {
+    text-align: center !important;
+  }
+
+  .submit {
+    height: 32vw;
+    width: 32vw;
+    font-family: "Amatic SC", cursive;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-align: center !important;
+    border-width: 0.5rem !important;
+    border-style: solid !important;
+    border-color: #403d39 !important;
+    border-image: none !important;
+    padding: 0%;
+    color: #252422;
+    background-color: #ccc5b9;
+  }
+
+  .submit:active {
+    background-color: crimson !important;
+    color: #fffcf2;
+  }
+
+  .contact-response {
+    padding: 0%;
+    font-family: "Amatic SC", cursive;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center !important;
+    color: #ccc5b9;
+    width: 80vw;
+    margin: 6rem 0rem 2rem 0rem;
   }
 }

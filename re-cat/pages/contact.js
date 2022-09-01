@@ -50,40 +50,72 @@ export default function Contact() {
         Vegye fel velünk a kapcsolatot az alábbi űrlap kitöltésével!
       </div>
       <form onSubmit={handleSubmit}>
-      <div className="cut"></div>
         <div className="input-row">
-          <input type="text" id="first" name="first" className="input" placeholder="Keresztnév" required />
+          <input
+            type="text"
+            id="first"
+            name="first"
+            className="input"
+            placeholder="Családnév"
+            required
+          />
         </div>
-      <div className="cut"></div>
         <div className="input-row">
           <label htmlFor="last" className="placeholder"></label>
-          <input type="text" id="last" name="last" className="input" placeholder="Családnév" required />
+          <input
+            type="text"
+            id="last"
+            name="last"
+            className="input"
+            placeholder="Keresztnév"
+            required
+          />
         </div>
-      <div className="cut"></div>
         <div className="input-row">
           <label htmlFor="email" className="placeholder"></label>
-          <input type="email" id="email" name="email" className="input" placeholder="E-mail" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            className="input"
+            placeholder="E-mail"
+            required
+          />
         </div>
-      <div className="cut"></div>
         <div className="input-row">
           <label htmlFor="subject" className="placeholder"></label>
-          <input type="text" id="subject" name="subject" className="input" placeholder="Tárgy" required />
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            className="input"
+            placeholder="Tárgy"
+            required
+          />
         </div>
-      <div className="cut"></div>
         <div className="input-row">
           <label htmlFor="message" className="placeholder"></label>
-          <textarea id="message" name="message" className="textarea" placeholder="Üzenet" required />
+          <textarea
+            id="message"
+            name="message"
+            className="textarea"
+            placeholder="Üzenet"
+            required
+          />
         </div>
-        <div className="input-row">
-          <button type="submit" className="submit">Küldés</button>
+        <div className="input-row" id="button-container">
+          <button type="submit" className="submit">
+            Küldés
+          </button>
         </div>
       </form>
     </div>
   );
 
   const submitText = (
-    <div className="contact-title">
-      Köszönjük az érdeklődést, kollégánk hamarosan felveszi Önnel a kapcsolatot!
+    <div className="contact-response">
+      Köszönjük az érdeklődést, kollégánk hamarosan felveszi Önnel a
+      kapcsolatot!
     </div>
   );
 

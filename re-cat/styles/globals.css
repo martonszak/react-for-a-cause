@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 /* font-family: 'Amatic SC', cursive; */
+/* font-family: 'Playfair Display', serif; */
 
 /* IMAGE GALLERY */
 
@@ -213,21 +214,12 @@ a {
 
 /*///////////////////////*/
 
-form {
-  background-color: #15172b;
-  border-radius: 20px;
-  box-sizing: border-box;
-  height: 500px;
-  padding: 20px;
-  width: 320px;
-}
-
 .contact-title {
   font-family: "Amatic SC", cursive;
   font-weight: 700;
   font-size: 2rem;
   height: 6rem;
-  text-shadow: 2px 2px #eb5e28;
+  /* text-shadow: 2px 2px #eb5e28; */
   display: flex;
   width: 100%;
   padding: 1rem;
@@ -268,7 +260,7 @@ form {
 
 .textarea {
   background-color: #303245;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   border: 0;
   box-sizing: border-box;
   color: #ccc5b9;
@@ -276,26 +268,24 @@ form {
   outline: 0;
   padding: 0.2rem 0.2rem 0.2rem;
   width: 100%;
-  height: 3rem;
+  /* height: 3rem; */
 }
 
 .placeholder {
   color: #65657b;
-  font-family: sans-serif;
   pointer-events: none;
   position: absolute;
   transform-origin: 0 50%;
   transition: transform 200ms, color 200ms;
-  left: 20px;
-  line-height: 14px;
   pointer-events: none;
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: #65657b;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #403d39;
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 1.3rem;
 }
 
 .input:active ~ .placeholder,
