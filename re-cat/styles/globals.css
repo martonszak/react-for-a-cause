@@ -322,20 +322,8 @@ textarea::placeholder {
   font-size: large;
 }
 
-.link {
-  color: #eb5e28;
-  list-style: none;
-  font-size: larger;
-  margin-bottom: 18px;
-}
-
 .pdfclass {
   color: #eb5e28;
-}
-
-.linkcontainer {
-  display: flex;
-  justify-content: space-around;
 }
 
 .smileycat {

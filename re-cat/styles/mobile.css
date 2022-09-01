@@ -275,7 +275,7 @@ almost white: #FFFCF2
     color: #ccc5b9;
     margin: 1rem 0rem;
   }
-  
+
   .about-header {
     font-family: "Amatic SC", cursive;
     font-weight: 700;
@@ -388,4 +388,54 @@ almost white: #FFFCF2
     width: 80vw;
     margin: 6rem 0rem 2rem 0rem;
   }
+
+  .good-container {
+    margin: auto;
+    padding: 0%;
+    width: 80vw;
+    padding-top: 10vh;
+    text-align: justify;
+  }
+
+  .good-title {
+    font-family: "Amatic SC", cursive;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #ccc5b9;
+    margin: 1rem 0rem;
+  }
+
+  .good-text {
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    color: #ccc5b9;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+  .good-link {
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    color: #eb5e28;
+    margin: 0rem 0rem 1rem 0rem;
+    list-style: none;
+  }
+
+  .good-links {
+    padding: 0%;
+    text-align: center;
+  }
+  .good-link-container-text {
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+  }
+
+  #good-cat-1, #good-cat-2 {
+    display: none;
+  }
+
+  .smileycat{
+    padding: 0%;
+    margin: 2rem 0rem 6rem 0rem;
+  }
+
 }
