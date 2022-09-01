@@ -89,7 +89,7 @@ almost white: #CCC5B9
 
 .bad-reasons-container {
   display: flex;
-  width: 80%;
+  width: 63rem;
   flex-direction: column;
   flex-wrap: nowrap;
   padding-bottom: 5rem;
@@ -97,8 +97,32 @@ almost white: #CCC5B9
   margin: auto;
 }
 
+.bad-reasons-list {
+  display: flex;
+  width: 100%;
+  height: 15rem;
+  justify-content: center;
+}
+
 .bad-reasons-list-item {
-  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: justify;
+}
+
+.bad-reasons-paragraph {
+  margin: 1rem;
+}
+
+.bad-reasons-title {
+  text-align:justify;
+  width: 100%;
+}
+
+.bad-reasons-reference {
+  text-align: center;
+  width: 100%;
 }
 
 .about-container {
@@ -133,6 +157,7 @@ almost white: #CCC5B9
   margin: 10%;
   justify-content: center;
   align-items: center;
+  height: 47.3rem;
 }
 
 .input-row {
@@ -263,11 +288,11 @@ form {
   font-family: "Amatic SC", cursive;
   font-weight: 700;
   font-size: 2rem;
-  height: 4rem;
+  height: 6rem;
   text-shadow: 2px 2px #eb5e28;
   display: flex;
   width: 100%;
-  padding: 0;
+  padding: 1rem;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -293,30 +318,28 @@ form {
 
 .input {
   background-color: #303245;
-  border-radius: 12px;
+  border-radius: 0.5rem;
   border: 0;
   box-sizing: border-box;
   color: #CCC5B9;
-  font-size: 18px;
-  height: 100%;
+  font-size: 1.1rem;
   outline: 0;
-  padding: 4px 20px 0;
+  padding: 0.2rem 0.2rem 0.2rem;
   width: 100%;
 }
 
-/* textarea {
+.textarea {
   background-color: #303245;
-  border-radius: 12px;
+  border-radius: 0.5rem;
   border: 0;
   box-sizing: border-box;
   color: #CCC5B9;
-  font-size: 18px;
-  height: 100%;
+  font-size: 1.1rem;
   outline: 0;
-  padding: 4px 20px 0;
+  padding: 0.2rem 0.2rem 0.2rem;
   width: 100%;
-  margin: 0.1rem;
-} */
+  height: 3rem;
+}
 
 .placeholder {
   color: #65657b;
@@ -328,6 +351,12 @@ form {
   left: 20px;
   line-height: 14px;
   pointer-events: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #65657b;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .input:active ~ .placeholder,

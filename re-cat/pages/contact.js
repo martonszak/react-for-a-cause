@@ -52,28 +52,27 @@ export default function Contact() {
       <form onSubmit={handleSubmit}>
       <div className="cut"></div>
         <div className="input-row">
-          <label htmlFor="first" className="placeholder">Keresztnév</label>
-          <input type="text" id="first" name="first" className="input" placeholder=" " required />
+          <input type="text" id="first" name="first" className="input" placeholder="Keresztnév" required />
         </div>
       <div className="cut"></div>
         <div className="input-row">
-          <label htmlFor="last" className="placeholder">Családnév</label>
-          <input type="text" id="last" name="last" className="input" placeholder=" " required />
+          <label htmlFor="last" className="placeholder"></label>
+          <input type="text" id="last" name="last" className="input" placeholder="Családnév" required />
         </div>
       <div className="cut"></div>
         <div className="input-row">
-          <label htmlFor="email" className="placeholder">E-mail</label>
-          <input type="email" id="email" name="email" className="input" placeholder=" " required />
+          <label htmlFor="email" className="placeholder"></label>
+          <input type="email" id="email" name="email" className="input" placeholder="E-mail" required />
         </div>
       <div className="cut"></div>
         <div className="input-row">
-          <label htmlFor="subject" className="placeholder">Tárgy</label>
-          <input type="text" id="subject" name="subject" className="input" placeholder=" " required />
+          <label htmlFor="subject" className="placeholder"></label>
+          <input type="text" id="subject" name="subject" className="input" placeholder="Tárgy" required />
         </div>
       <div className="cut"></div>
         <div className="input-row">
-          <label htmlFor="message" className="placeholder">Üzenet</label>
-          <textarea id="message" name="message" className="input" placeholder=" " required />
+          <label htmlFor="message" className="placeholder"></label>
+          <textarea id="message" name="message" className="textarea" placeholder="Üzenet" required />
         </div>
         <div className="input-row">
           <button type="submit" className="submit">Küldés</button>
@@ -83,10 +82,9 @@ export default function Contact() {
   );
 
   const submitText = (
-    <p>
-      We appreciate you contacting us. One of our colleagues will get back in
-      touch with you soon! Have a great day!
-    </p>
+    <div className="contact-title">
+      Köszönjük az érdeklődést, kollégánk hamarosan felveszi Önnel a kapcsolatot!
+    </div>
   );
 
   return visible ? contactForm : submitText;
