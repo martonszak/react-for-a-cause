@@ -1,0 +1,381 @@
+/* font-family: 'Amatic SC', cursive; 
+font-family: 'Playfair Display', serif;*/
+
+/* COLORS
+
+orange: #EB5E28
+red: crimson;
+dark grey: #252422
+medium grey: #CCC5B9
+light grey: #403D39
+almost white: #CCC5B9
+
+*/
+
+@media only screen and (max-width: 790px) and (min-width: 429px) {
+
+    @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+    @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    .icon-1,
+    .icon-2,
+    .icon-3 {
+        position: absolute;
+        left: 1rem;
+        top: 1.9rem;
+        width: 2rem;
+        height: 0.2rem;
+        background-color: black;
+        transition: all 400ms cubic-bezier(0.84, 0.06, 0.52, 1.8);
+    }
+
+    .icon-1 {
+        transform: translateY(-0.6rem);
+        animation-delay: 200ms;
+    }
+
+    .icon-3 {
+        transform: translateY(0.6rem);
+        animation-delay: 250ms;
+    }
+
+    .hamburger-icon {
+        position: fixed;
+        height: 4rem;
+        width: 4rem;
+        top: 0%;
+        left: 0%;
+        z-index: 1000;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .icon-1.a {
+        transform: rotate(40deg);
+    }
+
+    .icon-3.b {
+        transform: rotate(-40deg);
+    }
+
+    .icon-2.c {
+        opacity: 0;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    @keyframes slideIn {
+        0% {
+            width: 0%;
+            opacity: 0;
+        }
+
+        100% {
+            width: 50%;
+            opacity: 1;
+        }
+    }
+
+    nav {
+        background: #eb5e28;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 0%;
+        z-index: 10;
+        opacity: 0;
+        transition: all 600ms cubic-bezier(0.62, 0.04, 0.3, 1.56);
+        transition-delay: 100ms;
+    }
+
+    nav ul {
+        font-family: "Amatic SC", cursive;
+        font-weight: 700;
+        font-size: 2.2rem;
+        margin: 0;
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        padding: 0%;
+    }
+
+    nav ul li {
+        list-style: none;
+        color: #fff;
+        line-height: 2.2;
+        text-transform: uppercase;
+        letter-spacing: 1.7px;
+    }
+
+    nav.show {
+        width: 40%;
+        opacity: 1;
+    }
+
+    .dark-blue {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(220, 20, 60, 0.5);
+        height: 100vh;
+        width: 0%;
+        transition: all 500ms cubic-bezier(0.62, 0.04, 0.3, 1.8);
+        transition-delay: 50ms;
+        z-index: 5;
+    }
+
+    .dark-blue.slide {
+        width: 40%;
+        background-color: rgb(220, 20, 60, 0.2);
+    }
+
+    @keyframes shotup {
+        0% {
+            transform: translateY(300%);
+            opacity: 0;
+        }
+
+        90% {
+            transform: translateY(-50px);
+        }
+
+        100% {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 70px;
+        animation: shotup 600ms ease-in-out;
+        animation-delay: 300ms;
+    }
+
+    .navbar-a,
+    .navbar-list {
+        display: none;
+    }
+
+    .navbar-button {
+        display: block;
+    }
+
+    .footer-list {
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: fit-content;
+    }
+
+    .footer-list-campaign {
+        display: none;
+    }
+
+    .footer-container {
+        justify-content: center;
+    }
+
+    .navbar-list-item-mobile {
+        list-style-type: none;
+    }
+
+    /* BUTTON */
+    .navbar-button-mobile,
+    .navbar-button {
+        margin: 10px;
+        padding: 15px 30px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border-radius: 10px;
+        display: block;
+        border: 0px;
+        font-weight: 700;
+        box-shadow: 0px 0px 14px -7px #f09819;
+        background-image: linear-gradient(45deg,
+                #ff512f 0%,
+                #f09819 51%,
+                #ff512f 100%);
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    .navbar-button-mobile:hover,
+    .navbar-button:hover {
+        background-position: right center;
+        /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .navbar-button-mobile:active,
+    .navbar-button:active {
+        transform: scale(0.95);
+    }
+
+    .goodmethod-list {
+        font-size: large;
+    }
+
+    .image-gallery-content,
+    .image-gallery-slide,
+    .image-gallery-image {
+        height: 100vh !important;
+        width: 100vw !important;
+        max-height: none !important;
+        object-fit: cover !important;
+    }
+
+    /* ABOUT */
+
+    .about-container {
+        margin: auto;
+        padding: 0%;
+        width: 80vw;
+        padding-top: 10vh;
+    }
+
+    .about-title {
+        font-family: "Amatic SC", cursive;
+        font-weight: 700;
+        font-size: 2.2rem;
+        color: #CCC5B9;
+        margin: 1rem 0rem;
+    }
+
+    .about-header {
+        font-family: "Amatic SC", cursive;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #CCC5B9;
+        margin: 1rem 0rem;
+    }
+
+    .about-text {
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+        color: #CCC5B9;
+        margin: 1rem 0rem 6rem 0rem;
+    }
+
+    /* CONTACT */
+
+    .contact-form {
+        margin: auto;
+        padding: 0%;
+        width: 100vw;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        display: block;
+      }
+    
+      .contact-title {
+        padding: 0%;
+        font-family: "Amatic SC", cursive;
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: #ccc5b9;
+        margin: 1rem 0rem 2rem 0rem;
+      }
+
+      .effect-3{
+        padding-bottom:30vh
+      }
+    
+      form {
+        background-color: #252422;
+        box-sizing: border-box;
+        height: 90vh;
+        padding-top: 2vh;
+        padding-bottom:2vh;
+        width: 80vw;
+        margin: auto;
+      }
+      .cut {
+        display: none;
+      }
+    
+      .input-row {
+        width: 100%;
+        margin: 0%;
+      }
+    
+      .input {
+        margin: 3% 10% 3% 10%;
+        font-family: "Amatic SC", cursive;
+        font-weight: 700;
+        color: #252422;
+        width: 80%;
+        border-radius: 0%;
+        background-color: #ccc5b9;
+        padding: 0%;
+        padding-left: 2%;
+        height: 2rem;
+      }
+    
+      .textarea {
+        margin: 5% 10% 5% 10%;
+        font-family: "Amatic SC", cursive;
+        font-weight: 700;
+        color: #252422;
+        width: 80%;
+        border-radius: 0%;
+        background-color: #ccc5b9;
+        padding: 0%;
+        padding-left: 2%;
+        height: 2rem;
+      }
+    
+      #button-container {
+        text-align: center !important;
+      }
+    
+      .submit {
+        height: 32vw;
+        width: 32vw;
+        font-family: "Amatic SC", cursive;
+        font-weight: 700;
+        font-size: 2.2rem;
+        text-align: center !important;
+        border-width: 0.5rem !important;
+        border-style: solid !important;
+        border-color: #403d39 !important;
+        border-image: none !important;
+        padding: 0%;
+        color: #252422;
+        background-color: #ccc5b9;
+      }
+    
+      .submit:active {
+        background-color: crimson !important;
+        color: #fffcf2;
+      }
+    
+      .contact-response {
+        padding: 0%;
+        font-family: "Amatic SC", cursive;
+        font-weight: 700;
+        font-size: 3rem;
+        text-align: center !important;
+        color: #ccc5b9;
+        width: 80vw;
+        margin: 6rem 0rem 2rem 0rem;
+      }
+}

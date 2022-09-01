@@ -1,10 +1,11 @@
-/* eslint-disable react/jsx-key */
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSpring, animated } from "@react-spring/web";
+import { useDrag } from "@use-gesture/react";
 
 const content = [
   <div className="bad-reasons-list-item">
-    <p align="center">Túl drága</p>
-    <div className="bad-reasons-paragraph">
+    <div className="bad-resons-header">Túl drága</div>
+    <div className="bad-reasons-text">
       Mihez képest? Az évi két vagy több alom etetéséhez és felneveléséhez?
       Ahhoz az elpazarolt időhöz, amit azzal töltünk, hogy gazdát keresünk a
       kicsinyeknek? Az új gazdák keresését célzó hirdetések árához? Minden
@@ -17,10 +18,10 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <p align="center">
+    <div className="bad-resons-header">
       Azt szeretném, ha a gyerekek tanúi lehetnének a születés csodájának
-    </p>
-    <div className="bad-reasons-paragraph">
+    </div>
+    <div className="bad-reasons-text">
       Ó jaj. S mi a helyzet a macskák és kutyák ezreivel, amelyeket a születés
       csodájának megszemlézése után kidobnak az utcára, vagy azokkal, amelyek
       rövid, sanyarú életük végén állatmenhelyen végzik, s ott a túlzsúfoltság
@@ -30,8 +31,10 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <p align="center">Mindig sikerül számukra jó helyet találnunk</p>
-    <div className="bad-reasons-paragraph">
+    <div className="bad-resons-header">
+      Mindig sikerül számukra jó helyet találnunk
+    </div>
+    <div className="bad-reasons-text">
       Csak nem? Jó Önnek, mert olyan sok barátja és ismerőse van, akiknél évente
       legalább egy tucat kismacskát is el tud helyezni. Viszont a piacon, az
       utcán, állatvásáron papírdobozból „kimért” kismacskák nem biztos, hogy
@@ -42,8 +45,8 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <p align="center">Túl fiatalok az ivartalanításra</p>
-    <div className="bad-reasons-paragraph">
+    <div className="bad-resons-header">Túl fiatalok az ivartalanításra</div>
+    <div className="bad-reasons-text">
       A macskák hat hónapos kor után ivartalaníttathatóak. A nőstények akár 5-6
       hónapos korukban is fogamzásképesek lehetnek. Ez kívülről ugyanis nem
       látszik. Legjobb, ha nem vár, hanem kezébe veszi a macska családtervezési
@@ -52,8 +55,8 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <p align="center">Meg fog hízni és ellustul</p>
-    <div className="bad-reasons-paragraph">
+    <div className="bad-resons-header">Meg fog hízni és ellustul</div>
+    <div className="bad-reasons-text">
       Ha ez igaz, akkor az ellenkezője is, tehát a macska a sorozatos ellésektől
       lesz friss és egészséges. Az ivartalanított kedvenc csak akkor hízik el,
       ha Ön hagyja. A hízás és ellustulás oka macskáknál, éppen úgy, mint az
@@ -66,8 +69,10 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <p align="center">Van helyünk, és nagyon szeretjük az állatokat</p>
-    <div className="bad-reasons-paragraph">
+    <div className="bad-resons-header">
+      Van helyünk, és nagyon szeretjük az állatokat
+    </div>
+    <div className="bad-reasons-text">
       Ha igazán szereti macskáját vagy kutyáját, ivartalaníttassa. Ha van helye
       továbbiak tartására, fogadjon örökbe gazdátlan állatot, ne maga állítsa
       elő őket. S ne feledje, az utódok is hamarosan szaporodni fognak. Egy
@@ -82,16 +87,20 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <p align="center">Soha nem tévesztem szem elől, nem tud bepárzani</p>
-    <div className="bad-reasons-paragraph">
+    <div className="bad-resons-header">
+      Soha nem tévesztem szem elől, nem tud bepárzani
+    </div>
+    <div className="bad-reasons-text">
       Ilyen éber ember nincs. A tüzelő macska vagy kutya megleli a módját, hogy
       kiszökjön, s párt keressen magának. Ha pedig ő nem megy ki a kertből, majd
       bejönnek a lovagjai.
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <p align="center">Az állatnak szüksége van egy alomra, hogy lenyugodjon</p>
-    <div className="bad-reasons-paragraph">
+    <div className="bad-resons-header">
+      Az állatnak szüksége van egy alomra, hogy lenyugodjon
+    </div>
+    <div className="bad-reasons-text">
       Egek ura! Ennek az ostoba tévhitnek egyszer és mindenkorra véget kell
       vetni. Hölgyeim, Önök „lenyugodtak” miután gyermekük lett? Semmiféle
       orvosi bizonyíték nem szól amellett, hogy a kölykezés, akár egyszeri, akár
@@ -104,12 +113,12 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <p align="center">
+    <div className="bad-resons-header">
       Olyan macskát akarok, amelyik pont úgy néz ki, mint a Cirmikém, avagy
       szeretném tudni milyen utód születik, ha a fél-sziámimat a szomszéd
       fél-perzsájával pároztatom
-    </p>
-    <div className="bad-reasons-paragraph">
+    </div>
+    <div className="bad-reasons-text">
       Az esély arra, hogy akár megközelítőleg is Cirmikére hasonlító utód
       szülessen, minimális. Egy macska küllemét és jellemét génjei határozzák
       meg, ezeket anyjától és apjától örökli. A nászban szereplő apaállat
@@ -125,8 +134,10 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <p align="center">Meg akartam csináltatni a műtétet, de...</p>
-    <div className="bad-reasons-paragraph">
+    <div className="bad-resons-header">
+      Meg akartam csináltatni a műtétet, de...
+    </div>
+    <div className="bad-reasons-text">
       Ne várjon, MOST végeztesse el! Hibát mindenki véthet, elég baj, hogy
       Cirminek ott vannak a kölykei. Helyezze el őket, vigye Cirmit az
       állatorvoshoz és beszélje rá az új tulajdonosokat, hogy ne kövessék el azt
@@ -137,41 +148,48 @@ const content = [
   </div>,
 ];
 
-const contentViewer = (index) => {
-  return content[index];
-};
+let timer;
 
 export default function Badreasons() {
+  const [{ x, y }, api] = useSpring(() => ({ x: 0, y: 0 }));
   const [count, setCount] = useState(0);
-  const handleBack = () => {
+
+  const goBack = () => {
     if (count === 0) {
       setCount(content.length - 1);
     } else {
       setCount(count - 1);
     }
   };
-  const handleForward = () => {
+
+  const goForward = () => {
     if (count === content.length - 1) {
       setCount(0);
     } else {
       setCount(count + 1);
     }
   };
+
+  const bind = useDrag(({ down, movement: [mx, my] }) => {
+    clearTimeout(timer);
+    api.start({ x: down ? mx : 0, y: down ? my : 0, immediate: down });
+    if (mx <= -100) {
+      timer = setTimeout(() => goBack(), 100);
+    }
+    if (mx >= 100) {
+      timer = setTimeout(() => goForward(), 100);
+    }
+  });
+
   return (
     <div className="bad-reasons-container">
-      <div className="bad-reasons-title">
-        <h1>
-          A 10 legrosszabb kifogás a macskák (és kutyák) ivartalanítása ellen
-        </h1>
-      </div>
-      <div className="bad-reasons-list">
-        <button onClick={handleBack}>{"<"}</button>
-        {contentViewer(count)}
-        <button onClick={handleForward}>{">"}</button>
-      </div>
-      <div className="bad-reasons-reference">
-        (Megjelent A MACSKA 1993/4. számában, 15.old.)
-      </div>
+      <div className="bad-reasons-title">A 10 legrosszabb kifogás</div>
+      <div className="bad-reasons-pager-text">Húzd a szöveget oldalra további tippekhez!</div>
+      <animated.div {...bind()} style={{ x }} className="bad-reasons-list">
+        <button onClick={goBack} className="page-button">{"<"}</button>
+        {content[count]}
+        <button onClick={goForward} className="page-button">{">"}</button>
+      </animated.div>
     </div>
   );
 }

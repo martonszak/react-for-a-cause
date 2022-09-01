@@ -3,6 +3,7 @@ import Layout from "./components/layout";
 import "../styles/transition.css";
 import Transition from "./Transition";
 import "../styles/mobile.css";
+import "../styles/tablet.css";
 
 
 function MyApp({ Component, pageProps }) {
