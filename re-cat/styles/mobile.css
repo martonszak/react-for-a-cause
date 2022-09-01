@@ -75,6 +75,7 @@ almost white: #CCC5B9
       opacity: 1;
     }
   }
+
   nav {
     background: #eb5e28;
     position: absolute;
@@ -87,6 +88,7 @@ almost white: #CCC5B9
     transition: all 600ms cubic-bezier(0.62, 0.04, 0.3, 1.56);
     transition-delay: 100ms;
   }
+
   nav ul {
     font-family: "Amatic SC", cursive;
     font-weight: 700;
@@ -139,6 +141,7 @@ almost white: #CCC5B9
       opacity: 1;
     }
   }
+
   .content {
     position: absolute;
     top: 50%;
@@ -147,6 +150,7 @@ almost white: #CCC5B9
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
   .content h1 {
     font-size: 70px;
     animation: shotup 600ms ease-in-out;
@@ -161,16 +165,37 @@ almost white: #CCC5B9
   .navbar-button {
     display: block;
   }
+
   .footer-list {
     align-items: flex-start;
     justify-content: flex-start;
     width: fit-content;
   }
+
   .footer-list-campaign {
     display: none;
   }
+
   .footer-container {
+    display: flex;
     justify-content: center;
+    text-align: center;
+    height: 4rem;
+    overflow: visible;
+    transition: all 600ms ease-in-out;
+  }
+
+  .adoszam {
+    padding-left: 0%;
+  }
+
+  .footer-container.hide {
+    padding: 0 5px;
+    height: 0;
+    opacity: 0;
+    line-height: 50px;
+    overflow: hidden;
+    transition: all 600ms ease-in-out;
   }
 
   .navbar-list-item-mobile {
@@ -229,6 +254,7 @@ almost white: #CCC5B9
     max-height: none !important;
     object-fit: cover !important;
   }
+
   .image-gallery-slide {
     left: -30rem !important;
   }
@@ -244,21 +270,22 @@ almost white: #CCC5B9
     font-family: "Amatic SC", cursive;
     font-weight: 700;
     font-size: 2.2rem;
-    color: #CCC5B9;
+    color: #ccc5b9;
     margin: 1rem 0rem;
   }
+  
   .about-header {
     font-family: "Amatic SC", cursive;
     font-weight: 700;
     font-size: 1.5rem;
-    color: #CCC5B9;
+    color: #ccc5b9;
     margin: 1rem 0rem;
   }
 
   .about-text {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-size: 1rem;
-    color: #CCC5B9;
+    color: #ccc5b9;
     margin: 1rem 0rem 6rem 0rem;
   }
 }
