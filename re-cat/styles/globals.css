@@ -317,6 +317,7 @@ textarea::placeholder {
   background-color: #06b;
 }
 
+/* good method css */
 .goodmethod-list {
   font-size: large;
 }
@@ -349,3 +350,18 @@ textarea::placeholder {
 .img1 {
   border-radius: 100%;
 }
+/* Pictures gallery (landingpage) */
+
+
+
+.image-gallery-content,
+.image-gallery-slide,
+.image-gallery-image {
+  height: 95vh !important;
+  padding-top: 2.6vh;
+
+  width: 100vw !important;
+  max-height: none !important;
+  object-fit: cover !important;
+}
+
