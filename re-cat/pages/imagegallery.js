@@ -14,7 +14,7 @@ export default function Gallery() {
   return (
     <ImageGallery
       infinite
-      autoPlay={true}
+      // autoPlay={true}
       showFullscreenButton={false}
       showPlayButton={false}
       showNav={false}

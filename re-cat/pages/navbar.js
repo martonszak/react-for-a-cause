@@ -63,7 +63,7 @@ export default function Navbar(props) {
             {menu.map((e, i) => (
               <li className="navbar-list-item-mobile" key={i}>
                 <Link className="navbar-link-mobile" href={e.href}>
-                  <a className="navbar-a-mobile">{e.text}</a>
+                  <a onClick={handleClick} className="navbar-a-mobile">{e.text}</a>
                 </Link>
               </li>
             ))}

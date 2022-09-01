@@ -155,8 +155,6 @@ almost white: #CCC5B9
   .navbar-list {
     display: none;
   }
-  .dark-blue {
-  }
 
   .navbar-button {
     display: block;
@@ -221,4 +219,15 @@ almost white: #CCC5B9
     font-size: large;
   }
 
+  .image-gallery-content,
+  .image-gallery-slide,
+  .image-gallery-image {
+    height: 100vh !important;
+    width: auto !important;
+    max-height: none !important;
+    object-fit: cover !important;
+  }
+  .image-gallery-slide{
+    left: -30rem !important;
+  }
 }
