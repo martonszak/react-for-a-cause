@@ -22,7 +22,7 @@ export default function GoodMethod() {
         idegen macskákat.
         <a className="pdfclass" href="http://macskakert.hu/feral.pdf">
           {" "}
-          A füzet pdf formátumban, egy alábbi képre kattintva érhető el.
+          A füzet pdf formátumban a képre kattintva érhető el.
         </a>{" "}
         Papír alapú formában elfogyott, nem megrendelhető. A kiadvány végén
         található Felmérés a programról csak mintaként szolgál, nem beküldhető.
