@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { useState } from "react";
 
 const content = [
@@ -16,7 +17,9 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <p align="center">Azt szeretném, ha a gyerekek tanúi lehetnének a születés csodájának</p>
+    <p align="center">
+      Azt szeretném, ha a gyerekek tanúi lehetnének a születés csodájának
+    </p>
     <div className="bad-reasons-paragraph">
       Ó jaj. S mi a helyzet a macskák és kutyák ezreivel, amelyeket a születés
       csodájának megszemlézése után kidobnak az utcára, vagy azokkal, amelyek
@@ -27,7 +30,7 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-     <p align="center">Mindig sikerül számukra jó helyet találnunk</p>
+    <p align="center">Mindig sikerül számukra jó helyet találnunk</p>
     <div className="bad-reasons-paragraph">
       Csak nem? Jó Önnek, mert olyan sok barátja és ismerőse van, akiknél évente
       legalább egy tucat kismacskát is el tud helyezni. Viszont a piacon, az
@@ -39,7 +42,7 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-     <p align="center">Túl fiatalok az ivartalanításra</p>
+    <p align="center">Túl fiatalok az ivartalanításra</p>
     <div className="bad-reasons-paragraph">
       A macskák hat hónapos kor után ivartalaníttathatóak. A nőstények akár 5-6
       hónapos korukban is fogamzásképesek lehetnek. Ez kívülről ugyanis nem
@@ -49,7 +52,7 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-     <p align="center">Meg fog hízni és ellustul</p>
+    <p align="center">Meg fog hízni és ellustul</p>
     <div className="bad-reasons-paragraph">
       Ha ez igaz, akkor az ellenkezője is, tehát a macska a sorozatos ellésektől
       lesz friss és egészséges. Az ivartalanított kedvenc csak akkor hízik el,
@@ -63,7 +66,7 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-     <p align="center">Van helyünk, és nagyon szeretjük az állatokat</p>
+    <p align="center">Van helyünk, és nagyon szeretjük az állatokat</p>
     <div className="bad-reasons-paragraph">
       Ha igazán szereti macskáját vagy kutyáját, ivartalaníttassa. Ha van helye
       továbbiak tartására, fogadjon örökbe gazdátlan állatot, ne maga állítsa
@@ -101,9 +104,11 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <p align="center">Olyan macskát akarok, amelyik pont úgy néz ki, mint a Cirmikém, avagy
-    szeretném tudni milyen utód születik, ha a fél-sziámimat a szomszéd
-    fél-perzsájával pároztatom</p>
+    <p align="center">
+      Olyan macskát akarok, amelyik pont úgy néz ki, mint a Cirmikém, avagy
+      szeretném tudni milyen utód születik, ha a fél-sziámimat a szomszéd
+      fél-perzsájával pároztatom
+    </p>
     <div className="bad-reasons-paragraph">
       Az esély arra, hogy akár megközelítőleg is Cirmikére hasonlító utód
       szülessen, minimális. Egy macska küllemét és jellemét génjei határozzák
@@ -136,7 +141,7 @@ const contentViewer = (index) => {
   return content[index];
 };
 
-export default function badReasons() {
+export default function Badreasons() {
   const [count, setCount] = useState(0);
   const handleBack = () => {
     if (count === 0) {
@@ -160,9 +165,9 @@ export default function badReasons() {
         </h1>
       </div>
       <div className="bad-reasons-list">
-        <button onClick={handleBack}>{'<'}</button>
+        <button onClick={handleBack}>{"<"}</button>
         {contentViewer(count)}
-        <button onClick={handleForward}>{'>'}</button>
+        <button onClick={handleForward}>{">"}</button>
       </div>
       <div className="bad-reasons-reference">
         (Megjelent A MACSKA 1993/4. számában, 15.old.)

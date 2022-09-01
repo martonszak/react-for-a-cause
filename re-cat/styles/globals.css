@@ -36,7 +36,7 @@ almost white: #CCC5B9
   width: 100%;
   padding: 0;
   align-items: center;
-  position: relative;
+  position: fixed;
   top: 0;
   margin: 0;
 }

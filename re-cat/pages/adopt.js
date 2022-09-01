@@ -1,4 +1,5 @@
-export default function adoptCat() {
+/* eslint-disable @next/next/no-img-element */
+export default function AdoptCat() {
   const cats = [
     {
       img: "/4.jpg",
@@ -50,7 +51,7 @@ export default function adoptCat() {
     <div className="adopt-container">
       {cats.map((e, i) => (
         <div className="adopt-cat-card" key={i}>
-          <img className="adopt-img" src={e.img} />
+          <img className="adopt-img" src={e.img} alt={i} />
           <br />
           <label>
             <strong>Név: </strong>
