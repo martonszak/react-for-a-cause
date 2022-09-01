@@ -1,0 +1,33 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+/* font-family: 'Amatic SC', cursive; */
+/* font-family: 'Playfair Display', serif; */
+
+/* COLORS
+
+orange: #EB5E28
+red: crimson;
+dark grey: #252422
+medium grey: #CCC5B9
+light grey: #403D39
+almost white: #CCC5B9
+
+*/
+
+/* Pictures gallery (landingpage) */
+/* 
+
+
+.image-gallery-content,
+.image-gallery-slide,
+.image-gallery-image {
+  height: 95vh !important;
+  padding-top: 2.6vh;
+
+  width: 100vw !important;
+  max-height: none !important;
+  object-fit: cover !important;
+} */
