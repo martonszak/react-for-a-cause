@@ -115,9 +115,7 @@ const content = [
   </div>,
   <div className="bad-reasons-list-item">
     <div className="bad-reasons-header">
-      Olyan macskát akarok, amelyik pont úgy néz ki, mint a Cirmikém, avagy
-      szeretném tudni milyen utód születik, ha a fél-sziámimat a szomszéd
-      fél-perzsájával pároztatom
+      Olyan macskát akarok, amelyik pont úgy néz ki, mint a Cirmikém
     </div>
     <div className="bad-reasons-text">
       Az esély arra, hogy akár megközelítőleg is Cirmikére hasonlító utód

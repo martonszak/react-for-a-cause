@@ -20,17 +20,17 @@ const images = [
 
 export default function Gallery() {
   return (
-    <div style={{position: "relative"}}>
-    <ImageGallery
-      Layout= {"fill"}
-      infinite
-      autoPlay={true}
-      showFullscreenButton={false}
-      showPlayButton={false}
-       showNav={false}
-      items={images}
-      slideInterval={4000}
-    />
+    <div style={{ position: "relative" }}>
+      <ImageGallery
+        Layout={"fill"}
+        infinite
+        autoPlay={true}
+        showFullscreenButton={false}
+        showPlayButton={false}
+        showNav={false}
+        items={images}
+        slideInterval={4000}
+      />
     </div>
   );
 }
