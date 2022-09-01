@@ -1,9 +1,9 @@
 export default function About() {
   return (
     <div className="about-container">
-      <h1>Rólunk</h1>
-      <h3>Kedves Látogatónk!</h3>
-      <p>
+      <h1 className="about-title">Rólunk</h1>
+      <h3 className="about-header">Kedves Látogatónk!</h3>
+      <p className="about-text">
         Köszöntjük induló oldalunkon! Az Alapítvány a macskákért célja, hogy
         minden macskának legyen odaadó gazdája, aki szerető gondoskodással veszi
         őt körül. Igaz az a mondás, hogy gyakran a kevesebb több lenne, hiszen
