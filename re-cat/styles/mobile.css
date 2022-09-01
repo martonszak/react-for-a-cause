@@ -500,13 +500,13 @@ almost white: #FFFCF2
   }
   
   .adopt-cat-card {
-    height: 120vh;
+    height: 50%;
   }
   
   .adopt-img {
-    height: 40vh;
-    object-fit: cover;
-    padding-top: 1rem;
+    object-fit: scale-down;
+    object-position: center;
+    padding-top: 0.5rem;
   }
   
   .adopt-text {

@@ -314,7 +314,6 @@ almost white: #FFFCF2
   padding-top: 10vh;
   display: grid;
   grid-template-columns: 50% 50%;
-  padding-bottom: 10vh;
 }
 
 .adopt-cat-card {
@@ -327,12 +326,13 @@ almost white: #FFFCF2
 
 .adopt-img {
   height: 50%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .adopt-text {
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  height: 13vh;
   padding: 0.3rem;
   text-align: justify;
 }

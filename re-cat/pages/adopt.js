@@ -52,7 +52,7 @@ export default function AdoptCat() {
     <div className="adopt-container">
       {cats.map((e, i) => (
         <div className="adopt-cat-card" key={i}>
-          <img className="adopt-img" src={e.img} alt={i} />
+          <img src={e.img} alt={i} className="adopt-img"/>
           <div className="adopt-text">
           <label>
             <strong className="adopt-strong-text">Név: </strong>
