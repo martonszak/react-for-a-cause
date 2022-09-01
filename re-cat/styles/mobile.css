@@ -78,7 +78,7 @@ almost white: #FFFCF2
 
   nav {
     background: #eb5e28;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
@@ -112,7 +112,7 @@ almost white: #FFFCF2
   }
 
   .dark-blue {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: rgb(220, 20, 60, 0.5);
@@ -256,7 +256,7 @@ almost white: #FFFCF2
   }
 
   .image-gallery-slide {
-    left: -30rem !important;
+    left: -20rem !important;
   }
 
   /* ABOUT PAGE */

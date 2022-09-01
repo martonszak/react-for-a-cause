@@ -1,10 +1,11 @@
+/* eslint-disable react/jsx-key */
 import { useEffect, useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
 
 const content = [
   <div className="bad-reasons-list-item">
-    <div className="bad-resons-header">Túl drága</div>
+    <div className="bad-reasons-header">Túl drága</div>
     <div className="bad-reasons-text">
       Mihez képest? Az évi két vagy több alom etetéséhez és felneveléséhez?
       Ahhoz az elpazarolt időhöz, amit azzal töltünk, hogy gazdát keresünk a
@@ -18,7 +19,7 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <div className="bad-resons-header">
+    <div className="bad-reasons-header">
       Azt szeretném, ha a gyerekek tanúi lehetnének a születés csodájának
     </div>
     <div className="bad-reasons-text">
@@ -31,7 +32,7 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <div className="bad-resons-header">
+    <div className="bad-reasons-header">
       Mindig sikerül számukra jó helyet találnunk
     </div>
     <div className="bad-reasons-text">
@@ -45,7 +46,7 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <div className="bad-resons-header">Túl fiatalok az ivartalanításra</div>
+    <div className="bad-reasons-header">Túl fiatalok az ivartalanításra</div>
     <div className="bad-reasons-text">
       A macskák hat hónapos kor után ivartalaníttathatóak. A nőstények akár 5-6
       hónapos korukban is fogamzásképesek lehetnek. Ez kívülről ugyanis nem
@@ -55,7 +56,7 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <div className="bad-resons-header">Meg fog hízni és ellustul</div>
+    <div className="bad-reasons-header">Meg fog hízni és ellustul</div>
     <div className="bad-reasons-text">
       Ha ez igaz, akkor az ellenkezője is, tehát a macska a sorozatos ellésektől
       lesz friss és egészséges. Az ivartalanított kedvenc csak akkor hízik el,
@@ -69,7 +70,7 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <div className="bad-resons-header">
+    <div className="bad-reasons-header">
       Van helyünk, és nagyon szeretjük az állatokat
     </div>
     <div className="bad-reasons-text">
@@ -87,7 +88,7 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <div className="bad-resons-header">
+    <div className="bad-reasons-header">
       Soha nem tévesztem szem elől, nem tud bepárzani
     </div>
     <div className="bad-reasons-text">
@@ -97,7 +98,7 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <div className="bad-resons-header">
+    <div className="bad-reasons-header">
       Az állatnak szüksége van egy alomra, hogy lenyugodjon
     </div>
     <div className="bad-reasons-text">
@@ -113,7 +114,7 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <div className="bad-resons-header">
+    <div className="bad-reasons-header">
       Olyan macskát akarok, amelyik pont úgy néz ki, mint a Cirmikém, avagy
       szeretném tudni milyen utód születik, ha a fél-sziámimat a szomszéd
       fél-perzsájával pároztatom
@@ -134,7 +135,7 @@ const content = [
     </div>
   </div>,
   <div className="bad-reasons-list-item">
-    <div className="bad-resons-header">
+    <div className="bad-reasons-header">
       Meg akartam csináltatni a műtétet, de...
     </div>
     <div className="bad-reasons-text">
@@ -173,22 +174,32 @@ export default function Badreasons() {
   const bind = useDrag(({ down, movement: [mx, my] }) => {
     clearTimeout(timer);
     api.start({ x: down ? mx : 0, y: down ? my : 0, immediate: down });
-    if (mx <= -100) {
-      timer = setTimeout(() => goBack(), 100);
+    if (mx <= -50) {
+      timer = setTimeout(() => goBack(), 200);
     }
-    if (mx >= 100) {
-      timer = setTimeout(() => goForward(), 100);
+    if (mx >= 50) {
+      timer = setTimeout(() => goForward(), 200);
     }
   });
 
   return (
     <div className="bad-reasons-container">
       <div className="bad-reasons-title">A 10 legrosszabb kifogás</div>
-      <div className="bad-reasons-pager-text">Húzd a szöveget oldalra további tippekhez!</div>
-      <animated.div {...bind()} style={{ x }} className="bad-reasons-list">
-        <button onClick={goBack} className="page-button">{"<"}</button>
+      <div className="bad-reasons-pager-text">
+        Húzd a szöveget oldalra további tippekhez!
+      </div>
+      <animated.div
+        {...bind()}
+        style={{ x, touchAction: "none" }}
+        className="bad-reasons-list"
+      >
+        <button onClick={goBack} className="page-button">
+          {"<"}
+        </button>
         {content[count]}
-        <button onClick={goForward} className="page-button">{">"}</button>
+        <button onClick={goForward} className="page-button">
+          {">"}
+        </button>
       </animated.div>
     </div>
   );
