@@ -486,4 +486,42 @@ almost white: #FFFCF2
     margin: 2rem 0rem 6rem 0rem;
   }
 
+  /* ADOPT */
+
+  .adopt-container {
+    margin: auto;
+    padding: 0%;
+    width: 80vw;
+    height: 140vh;
+    padding-top: 10vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 10vh;
+  }
+  
+  .adopt-cat-card {
+    height: 120vh;
+  }
+  
+  .adopt-img {
+    height: 40vh;
+    object-fit: cover;
+    padding-top: 1rem;
+  }
+  
+  .adopt-text {
+    font-family: "Amatic SC", cursive;
+    font-weight: 400;
+    text-align: justify;
+  }
+  
+  .adopt-strong-text {
+    font-family: "Amatic SC", cursive;
+    font-weight: 700;
+    font-size: x-large;
+  }
+
+  .adopt-description {
+    display: none;
+  }
 }

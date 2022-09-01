@@ -31,3 +31,43 @@ almost white: #CCC5B9
   max-height: none !important;
   object-fit: cover !important;
 } */
+
+/* ADOPT PAGE */
+
+.adopt-container {
+  margin: auto;
+  padding: 0%;
+  width: 80vw;
+  padding-top: 10vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-bottom: 10vh;
+}
+
+.adopt-cat-card {
+  object-position: center;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 100%;
+  padding: 1vw;
+}
+
+.adopt-img {
+  height: 100%;
+}
+
+.adopt-text {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  height: 13vh;
+  padding: 0.3rem;
+  text-align: justify;
+}
+
+.adopt-strong-text {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: x-large;
+}

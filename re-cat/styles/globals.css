@@ -198,24 +198,6 @@ a {
   box-sizing: border-box;
 }
 
-/* ADOPT PAGE */
-
-.adopt-container {
-  width: 100%;
-  max-height: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-.adopt-cat-card {
-  object-position: center;
-  object-fit: cover;
-}
-
-.adopt-img {
-  width: 100%;
-}
-
 /*///////////////////////*/
 
 .contact-title {

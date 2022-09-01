@@ -4,7 +4,7 @@ import "../styles/transition.css";
 import Transition from "./Transition";
 import "../styles/mobile.css";
 import "../styles/tablet.css";
-
+import "../styles/desktop.css";
 
 function MyApp({ Component, pageProps }) {
   return (

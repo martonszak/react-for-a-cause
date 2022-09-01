@@ -1,14 +1,5 @@
 const cats = [
   {
-    img: "/4.jpg",
-    name: "Lusti",
-    type: "rövidszőrű",
-    age: "10 éves",
-    sex: "nőstény",
-    description:
-      "A nevem Lusti. Nagyon szeretek az ablakból nézelődni, meleg helyeken szunyókálni. Más háziállatokkal nem jövök jól ki, mert nem szeretem ha zaklatnak.",
-  },
-  {
     img: "/5.jpg",
     name: "Grumpy",
     type: "sziámi",
@@ -22,7 +13,7 @@ const cats = [
     name: "Blacky",
     type: "rövidszőrű",
     age: "3 éves",
-    sex: "nöstény",
+    sex: "nőstény",
     description:
       "Fekete macska vagyok, de a mondással ellentétben én szerencsét hozok.",
   },
@@ -32,7 +23,7 @@ const cats = [
     type: "skót lógófülű",
     age: "4 hónapos",
     sex: "nőstény",
-    description: "",
+    description: "A fülemet lógatom, nem a lábam!",
   },
   {
     img: "/8.jpg",
@@ -43,6 +34,15 @@ const cats = [
     description:
       "Félig kinti, félig benti, félig tigrisként éltem eddig, de még kicsi vagyok, benti cica is lehetek. Sok madarat és sok egeret vittem már haza, mert a gazdám nem tudott vadászni. ",
   },
+  {
+    img: "/4.jpg",
+    name: "Lusti",
+    type: "rövidszőrű",
+    age: "10 éves",
+    sex: "nőstény",
+    description:
+      "A nevem Lusti. Nagyon szeretek az ablakból nézelődni, meleg helyeken szunyókálni. Más háziállatokkal nem jövök jól ki, mert nem szeretem ha zaklatnak.",
+  }
 ];
 
 /* eslint-disable @next/next/no-img-element */
@@ -53,22 +53,25 @@ export default function AdoptCat() {
       {cats.map((e, i) => (
         <div className="adopt-cat-card" key={i}>
           <img className="adopt-img" src={e.img} alt={i} />
-          <br />
+          <div className="adopt-text">
           <label>
-            <strong>Név: </strong>
+            <strong className="adopt-strong-text">Név: </strong>
             {e.name}
           </label>
           <br />
           <label>
-            <strong>Kor: </strong>
+            <strong className="adopt-strong-text">Kor: </strong>
             {e.age}
           </label>
           <br />
           <label>
-            <strong>Neme: </strong>
+            <strong className="adopt-strong-text">Neme: </strong>
             {e.sex}
           </label>
-          <br />
+          <p className="adopt-description">
+            {e.description}
+          </p>
+          </div>
         </div>
       ))}
     </div>
