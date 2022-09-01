@@ -244,21 +244,68 @@ almost white: #CCC5B9
     font-family: "Amatic SC", cursive;
     font-weight: 700;
     font-size: 2.2rem;
-    color: #CCC5B9;
+    color: #ccc5b9;
     margin: 1rem 0rem;
   }
   .about-header {
     font-family: "Amatic SC", cursive;
     font-weight: 700;
     font-size: 1.5rem;
-    color: #CCC5B9;
+    color: #ccc5b9;
     margin: 1rem 0rem;
   }
 
   .about-text {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-size: 1rem;
-    color: #CCC5B9;
+    color: #ccc5b9;
     margin: 1rem 0rem 6rem 0rem;
+  }
+
+  .bad-reasons-container {
+    margin: auto;
+    padding: 0%;
+    width: 80vw;
+    padding-top: 10vh;
+  }
+
+  .bad-reasons-title {
+    font-family: "Amatic SC", cursive;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #ccc5b9;
+    margin: 1rem 0rem;
+  }
+
+  .bad-reasons-list {
+    display: flex;
+  }
+
+  .bad-reasons-header {
+    font-family: "Amatic SC", cursive;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #ccc5b9;
+    margin: 1rem 0rem;
+  }
+
+  .bad-reasons-text {
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    color: #ccc5b9;
+    margin: 1rem 0rem 6rem 0rem;
+  }
+
+  .page-button {
+    display: none;
+  }
+
+  .bad-reasons-pager-text {
+    display: block;
+    font-family: "Amatic SC", cursive;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #ccc5b9;
+    margin: 1rem 0rem;
   }
 }
