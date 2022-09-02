@@ -12,12 +12,12 @@
 
 /* COLORS
 
-orange: #EB5E28
+orange: #0e5764
 red: crimson;
 dark grey: #252422
-medium grey: #CCC5B9
-light grey: #403D39
-almost white: #CCC5B9
+medium grey: #0e5764
+light grey: #ebf4f6
+almost white: #0e5764
 
 */
 
@@ -34,7 +34,7 @@ almost white: #CCC5B9
   font-size: 2rem;
   width: 100%;
   height: 4rem;
-  background-color: #eb5e28;
+  background-color: #0e5764;
   display: flex;
   width: 100%;
   padding: 0;
@@ -54,7 +54,8 @@ almost white: #CCC5B9
   text-align: center;
 }
 .navbar-list-item:hover {
-  background-color: green;
+  background-color: #ffa630;
+  color: black;
 }
 
 /* FOOTER */
@@ -65,7 +66,7 @@ almost white: #CCC5B9
   font-size: 2rem;
   width: 100%;
   height: 4rem;
-  background-color: #eb5e28;
+  background-color: #0e5764;
   display: flex;
   align-items: center;
   position: fixed;
@@ -101,7 +102,7 @@ almost white: #CCC5B9
   font-family: "Amatic SC", cursive;
   font-weight: 700;
   font-size: 2.2rem;
-  color: #ccc5b9;
+  color: #0e5764;
   margin: 1rem 0rem;
 }
 
@@ -113,14 +114,14 @@ almost white: #CCC5B9
   font-family: "Amatic SC", cursive;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #ccc5b9;
+  color: #0e5764;
   margin: 1rem 0rem;
 }
 
 .bad-reasons-text {
   font-family: "Playfair Display", serif;
   font-size: 1rem;
-  color: #ccc5b9;
+  color: #0e5764;
   margin: 1rem 0rem 6rem 0rem;
 }
 
@@ -185,7 +186,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #403d39;
+  background-color: #ebf4f6;
   color: antiquewhite;
 }
 
@@ -205,7 +206,7 @@ a {
   font-weight: 700;
   font-size: 2rem;
   height: 6rem;
-  /* text-shadow: 2px 2px #eb5e28; */
+  /* text-shadow: 2px 2px #0e5764; */
   display: flex;
   width: 100%;
   padding: 1rem;
@@ -237,7 +238,7 @@ a {
   border-radius: 0.5rem;
   border: 0;
   box-sizing: border-box;
-  color: #ccc5b9;
+  color: #0e5764;
   font-size: 1.1rem;
   outline: 0;
   padding: 0.2rem 0.2rem 0.2rem;
@@ -249,7 +250,7 @@ a {
   /* border-radius: 0.5rem; */
   border: 0;
   box-sizing: border-box;
-  color: #ccc5b9;
+  color: #0e5764;
   font-size: 1.1rem;
   outline: 0;
   padding: 0.2rem 0.2rem 0.2rem;
@@ -268,7 +269,7 @@ a {
 
 input::placeholder,
 textarea::placeholder {
-  color: #403d39;
+  color: #ebf4f6;
   font-family: "Amatic SC", cursive;
   font-weight: 700;
   font-size: 1.3rem;
@@ -288,7 +289,7 @@ textarea::placeholder {
 }
 
 .submit {
-  background-color: #eb5e28;
+  background-color: #0e5764;
   border-radius: 100%;
   box-sizing: border-box;
   cursor: pointer;
@@ -309,7 +310,7 @@ textarea::placeholder {
 }
 
 .pdfclass {
-  color: #eb5e28;
+  color: #0e5764;
 }
 
 .smileycat {

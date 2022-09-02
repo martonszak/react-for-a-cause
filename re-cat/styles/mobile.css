@@ -1,10 +1,10 @@
 /* COLORS
 
-orange: #EB5E28
+orange: #0e5764
 red: crimson;
 dark grey: #252422
-medium grey: #403D39
-light grey: #CCC5B9
+medium grey: #ebf4f6
+light grey: #0e5764
 almost white: #FFFCF2
 
 */
@@ -22,7 +22,7 @@ almost white: #FFFCF2
     top: 1.9rem;
     width: 2rem;
     height: 0.2rem;
-    background-color: black;
+    background-color: #0e5764;
     transition: all 400ms cubic-bezier(0.84, 0.06, 0.52, 1.8);
   }
 
@@ -46,7 +46,7 @@ almost white: #FFFCF2
     cursor: pointer;
     /* border-radius: 50%; */
     transition: all 0.2s ease-in-out;
-    background: rgba(255, 255, 255, 0.5);
+    background: #ffa630;
   }
 
   .icon-1.a {
@@ -77,7 +77,7 @@ almost white: #FFFCF2
   }
 
   nav {
-    background: #eb5e28;
+    background: #0e5764;
     position: fixed;
     top: 0;
     left: 0;
@@ -115,7 +115,7 @@ almost white: #FFFCF2
     position: fixed;
     top: 0;
     left: 0;
-    background: rgb(220, 20, 60, 0.5);
+    background: rgba(20, 190, 220, 0.5);
     height: 100%;
     width: 0%;
     transition: all 500ms cubic-bezier(0.62, 0.04, 0.3, 1.8);
@@ -125,7 +125,7 @@ almost white: #FFFCF2
 
   .dark-blue.slide {
     width: 70%;
-    background-color: rgb(220, 20, 60, 0.2);
+    background-color: rgba(72, 193, 230, 0.2);
   }
 
   @keyframes shotup {
@@ -272,7 +272,7 @@ almost white: #FFFCF2
     font-family: "Amatic SC", cursive;
     font-weight: 700;
     font-size: 2.2rem;
-    color: #ccc5b9;
+    color: #0e5764;
     margin: 1rem 0rem;
   }
 
@@ -280,14 +280,14 @@ almost white: #FFFCF2
     font-family: "Amatic SC", cursive;
     font-weight: 700;
     font-size: 1.5rem;
-    color: #ccc5b9;
+    color: #0e5764;
     margin: 1rem 0rem;
   }
 
   .about-text {
     font-family: "Playfair Display", serif;
     font-size: 1rem;
-    color: #ccc5b9;
+    color: #0e5764;
     margin: 1rem 0rem 6rem 0rem;
   }
 
@@ -302,7 +302,7 @@ almost white: #FFFCF2
     font-family: "Amatic SC", cursive;
     font-weight: 700;
     font-size: 2.2rem;
-    color: #ccc5b9;
+    color: #0e5764;
     margin: 1rem 0rem;
   }
 
@@ -314,14 +314,14 @@ almost white: #FFFCF2
     font-family: "Amatic SC", cursive;
     font-weight: 700;
     font-size: 1.5rem;
-    color: #ccc5b9;
+    color: #0e5764;
     margin: 1rem 0rem;
   }
 
   .bad-reasons-text {
     font-family: "Playfair Display", serif;
     font-size: 1rem;
-    color: #ccc5b9;
+    color: #0e5764;
     margin: 1rem 0rem 6rem 0rem;
     text-align: justify;
   }
@@ -331,7 +331,7 @@ almost white: #FFFCF2
     font-family: "Amatic SC", cursive;
     font-weight: 700;
     font-size: 1.5rem;
-    color: #ccc5b9;
+    color: #0e5764;
     margin: 1rem 0rem;
   }
 
@@ -354,7 +354,7 @@ almost white: #FFFCF2
     font-family: "Amatic SC", cursive;
     font-weight: 700;
     font-size: 2.2rem;
-    color: #ccc5b9;
+    color: #0e5764;
     margin: 1rem 0rem 2rem 0rem;
   }
 
@@ -382,7 +382,7 @@ almost white: #FFFCF2
     color: #252422;
     width: 80%;
     border-radius: 0%;
-    background-color: #ccc5b9;
+    background-color: #0e5764;
     padding: 0%;
     padding-left: 2%;
     height: 1.6rem;
@@ -395,7 +395,7 @@ almost white: #FFFCF2
     color: #252422;
     width: 80%;
     border-radius: 0%;
-    background-color: #ccc5b9;
+    background-color: #0e5764;
     padding: 0%;
     padding-left: 2%;
     height: 1.6rem;
@@ -414,11 +414,11 @@ almost white: #FFFCF2
     text-align: center !important;
     border-width: 0.5rem !important;
     border-style: solid !important;
-    border-color: #403d39 !important;
+    border-color: #ebf4f6 !important;
     border-image: none !important;
     padding: 0%;
-    color: #252422;
-    background-color: #ccc5b9;
+    color: #ffa630;
+    background-color: #0e5764;
   }
 
   .submit:active {
@@ -432,7 +432,7 @@ almost white: #FFFCF2
     font-weight: 700;
     font-size: 3rem;
     text-align: center !important;
-    color: #ccc5b9;
+    color: #0e5764;
     width: 80vw;
     margin: 6rem 0rem 2rem 0rem;
   }
@@ -449,21 +449,21 @@ almost white: #FFFCF2
     font-family: "Amatic SC", cursive;
     font-weight: 700;
     font-size: 2.2rem;
-    color: #ccc5b9;
+    color: #0e5764;
     margin: 1rem 0rem;
   }
 
   .good-text {
     font-family: "Playfair Display", serif;
     font-size: 1rem;
-    color: #ccc5b9;
+    color: #0e5764;
     margin: 1rem 0rem 1rem 0rem;
   }
 
   .good-link {
     font-family: "Playfair Display", serif;
     font-size: 1rem;
-    color: #eb5e28;
+    color: #0e5764;
     margin: 0rem 0rem 1rem 0rem;
     list-style: none;
   }
@@ -475,6 +475,7 @@ almost white: #FFFCF2
   .good-link-container-text {
     font-family: "Playfair Display", serif;
     font-size: 1rem;
+    color: #0e5764;
   }
 
   #good-cat-1, #good-cat-2 {
@@ -513,6 +514,7 @@ almost white: #FFFCF2
     font-family: "Amatic SC", cursive;
     font-weight: 400;
     text-align: justify;
+    color: #0e5764;
   }
   
   .adopt-strong-text {
