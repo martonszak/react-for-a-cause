@@ -138,11 +138,11 @@ almost white: #FFFCF2
   }
 
   .page-button:hover {
-    color: #0e5764;
+    color: #ffa630;
   }
 
   .page-button:active {
-    color: #0e5764;
+    color: #ffa630;
     text-shadow: #252422 0.3rem 0.4rem 0.6rem;
     top: 13vh;
   }
@@ -179,6 +179,7 @@ almost white: #FFFCF2
     color: #0e5764;
     margin: 0rem 0rem 1rem 0rem;
     list-style: none;
+    color: #ffa630;
   }
 
   .good-links {
